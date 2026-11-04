@@ -1,0 +1,9 @@
+/aplicacionClics/node_modules/
+/aplicacionClics/.expo/
+/aplicacionClics/dist/
+/aplicacionClics/web-build/
+/aplicacionClics/expo-env.d.ts
+/aplicacionClics/*.tsbuildinfo
+.env
+.env.*
+!.env.example

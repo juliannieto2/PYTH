@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactividad con el DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <header class="header">
+        <h1>Interactividad con el DOM</h1>
+        <p>Haz clic en el botón para incrementar el contador y registrar la hora exacta del evento en la tabla.</p>
+      </header>
+
+      <div class="counter-box" id="contador" aria-live="polite">0</div>
+
+      <div class="buttons">
+        <button id="btn-like" class="btn-like" type="button">¡Haz Clic Aquí!</button>
+        <button id="btn-reset" class="btn-reset" type="button">Reiniciar</button>
+      </div>
+
+      <section class="table-container" aria-label="Historial de clics">
+        <table>
+          <thead>
+            <tr>
+              <th class="col-numero">Nº Clic</th>
+              <th class="col-hora">Hora</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-registros"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="script.js?v=reset-button"></script>
+  </body>
+</html>
